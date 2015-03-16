@@ -84,20 +84,20 @@ if onoff == 1{
         var 武藏成功模型 = successProb(failprobs(musou_success, fsst_attemp), attemps)
         if 武藏成功模型 > african_value {
             african_musou = index
-            println("武藏成功次数：\(african_musou) 次\n")
+            println("武藏成功次数：\(african_musou) 次")
             break
         }
     }
     //由于伞级使用同一条公式（4000 6000 6000 2000 +20），合并在一起。
     if african_yamato == african_musou {
         african_umbrella = african_yamato
-        println("使用同样公式，大和和武藏次数一样，取\(african_umbrella)次")
+        println("使用同样公式，大和和武藏次数一样，取\(african_umbrella)次\n")
     } else if (african_yamato > african_musou) {
         african_umbrella = african_yamato
-        println("使用同样公式，大和需要比武藏多，取\(african_umbrella)次")
+        println("使用同样公式，大和需要比武藏多，取\(african_umbrella)次\n")
     } else {
         african_umbrella = african_musou
-        println("使用同样公式，武藏需要比大和多，取\(african_umbrella)次")
+        println("使用同样公式，武藏需要比大和多，取\(african_umbrella)次\n")
     }
     //伊401模型
     println("伊401使用模型: \(伊401使用公式)")
